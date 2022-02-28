@@ -5,7 +5,7 @@
 }
 
 body{
-    background: url("./images/bg/circle-scatter-haikei.png") no-repeat center center/cover;
+    background: url("/images/bg/circle-scatter-haikei.png") no-repeat center center/cover;
     backdrop-filter: blur(25px);
     height: 1600px;
 }
