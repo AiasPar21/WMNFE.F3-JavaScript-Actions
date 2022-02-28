@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("/images/background.png") no-repeat center center/cover;
+    height: 100vh; 
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+#page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: rgb(254, 243, 210);
+    text-align: center;
+    margin: 40px;
+}
+/*------------------------form elements-----------------------------*/
+#form label{
+    color: rgb(254, 243, 210);
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.field{
+    display: grid;
+    grid-template-columns: repeat(2, 20% 80%);
+    width: 100%;
+    align-items: center;
+}
+
+.field-design p{
+    margin-top: 10px;
+    color:rgb(255, 95, 95);
+}
+
+.field-design{
+    margin: 30px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.form-element{
+    width: 85%;
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    border: none;
+    border-radius: 5px;
+    justify-items: flex-end;
+}
+
+.field-design label{
+    margin-right: 20px;
+}
+
+::placeholder{
+    font-size: 0.8rem;
+    color: rgb(176, 176, 176);
+}
+
+span{
+    color: aquamarine;
+}
+
+.category{
+    justify-self: flex-end;
+}
+
+/*------------------------end form elements-----------------------------*/
+
+
+
+/*------------------------Verify Text-----------------------------*/
+
+#verifyText{
+    text-align: center;
+    color:rgb(255, 95, 95);
+}
+
+#successText{
+    text-align: center;
+    color: rgb(32, 201, 32);
+}
+
+/*------------------------End Verify Text-----------------------------*/
+
+
+
+/*------------------------register button-----------------------------*/
+
+#register-button{
+    width: 10%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 95, 95);
+    color: white;
+    margin-bottom: 15px;
+    justify-self: flex-end;
+}
+
+#register-button:hover{
+    background-color: rgb(167, 60, 60);
+    cursor: pointer;
+}
+
+#register{
+    width: 86%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*------------------------End register button-----------------------------*/
+
+
+
+/*------------------------Mandatory-----------------------------*/
+
+#mandatory{
+    margin-top: 20px;
+    color: rgba(254, 243, 210, 0.5);
+}
+
+/*------------------------End Mandatory-----------------------------*/

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>BlobSome!</h1>
+    <div class="container">
+        <div class="carousel" data-carousel>
+            <div class="slide-show">
+                <i class="carousel-button prev uil uil-arrow-circle-left" onclick="prevImage()"></i>
+                <a class="playButton" onclick="playButton()"><i class="uil uil-play"></i></a>
+                <a class="stopButton" onclick="stopButton()"><i class="uil uil-pause"></i></a>
+                <img class="blob main-img" name="slide" src="./images/image1.jpg">
+                <i class="carousel-button next uil uil-arrow-circle-right" onclick="nextImage()"></i>
+                
+            </div>
+        </div>
+
+
+        <div class="thumbnails">
+            <a><img class="small-blob" onclick="thumbnails(0)" src="/images/image1.jpg"></a>
+            <a><img class="small-blob pos" onclick="thumbnails(1)" src="/images/image2.jpg"></a>
+            <a><img class="small-blob pos" onclick="thumbnails(2)" src="/images/image3.jpg"></a>
+            <a><img class="small-blob" onclick="thumbnails(3)" src="/images/image4.jpg"></a>
+        </div>
+    </div>
+</body>
+</html>

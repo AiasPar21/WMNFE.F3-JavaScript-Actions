@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("./images/bg/circle-scatter-haikei.png") no-repeat center center/cover;
+    backdrop-filter: blur(25px);
+    height: 1600px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+/*-------------------- Carousel Design ---------------------*/
+
+
+/*------------------ Next/Prev Buttons Design ---------------------*/
+
+
+.carousel-button{
+    font-size: 4rem;
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+}
+
+.carousel-button:hover{
+    font-size: 4.2rem;
+    cursor: pointer;
+}
+
+
+
+/*------------------ End Next/Prev Buttons Design ---------------------*/
+
+
+/*------------- Arrange ---------------*/
+
+.slide-show{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 150px;
+}
+
+
+/*------------- End Arrange ---------------*/
+
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.blob{
+    position: relative;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+    background-position: center;
+    background-size: cover;
+    animation: 
+    blobber 30s linear infinite,
+    cobler 30s linear infinite alternate;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes blobber {
+    0%  { border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+    5%  { border-radius: 48% 52% 41% 59% / 66% 37% 63% 34%; }
+    10% { border-radius: 69% 31% 71% 29% / 67% 31% 69% 33%; }
+    15% { border-radius: 60% 40% 71% 29% / 63% 65% 35% 37%; }
+    20% { border-radius: 61% 39% 51% 49% / 57% 58% 42% 43%; }
+    25% { border-radius: 66% 34% 25% 75% / 47% 30% 70% 53%; }
+    30% { border-radius: 32% 68% 38% 62% / 65% 60% 40% 35%; }
+    35% { border-radius: 63% 37% 41% 59% / 35% 38% 62% 65%; }
+    40% { border-radius: 57% 43% 49% 51% / 55% 71% 29% 45%; }
+    45% { border-radius: 47% 53% 34% 66% / 65% 36% 64% 35%; }
+    50% { border-radius: 44% 56% 32% 68% / 69% 26% 74% 31%; }
+    55% { border-radius: 28% 72% 37% 63% / 71% 44% 56% 29%; }    
+    60% { border-radius: 38% 62% 35% 65% / 74% 53% 47% 26%; }
+    65% { border-radius: 73% 27% 46% 54% / 54% 47% 53% 46%; }
+    70% { border-radius: 75% 25% 47% 53% / 49% 53% 47% 51%; }
+    75% { border-radius: 62% 38% 43% 57% / 55% 60% 40% 45%; }
+    80% { border-radius: 41% 59% 65% 35% / 73% 50% 50% 27%; }
+    85% { border-radius: 55% 45% 57% 43% / 73% 61% 39% 27%; }
+    90% { border-radius: 74% 26% 33% 67% / 40% 65% 35% 60%; }
+    95% { border-radius: 58% 42% 57% 43% / 53% 45% 55% 47%; }
+    100%{ border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+}
+
+@keyframes cobler {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes wobbler {
+    0%  {
+        transform: rotateZ(8deg);
+    }
+    100% {
+        transform: rotateZ(-8deg);
+    }
+}
+
+
+
+
+/*-------------------- End Carousel Design ---------------------*/
+
+
+/*-------------------- Thumbnails Design ---------------------*/
+
+.thumbnails{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 50px;
+    justify-content: center;
+    
+}
+
+.small-blob:hover{
+    transform: scale(1.1);
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.pos{
+    margin-top: 175px;
+}
+
+.small-blob {
+    background: red;
+    float:left;
+    opacity: 50%;
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+    background-position: center;
+    background-size: cover;
+    animation: 
+    blobber 30s linear infinite,
+    cobler 30s linear infinite alternate;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 5px 5px 20px hsla(0, 0%, 0%, 0.50);
+}
+
+@keyframes blobber {
+    0%  { border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+    5%  { border-radius: 48% 52% 41% 59% / 66% 37% 63% 34%; }
+    10% { border-radius: 69% 31% 71% 29% / 67% 31% 69% 33%; }
+    15% { border-radius: 60% 40% 71% 29% / 63% 65% 35% 37%; }
+    20% { border-radius: 61% 39% 51% 49% / 57% 58% 42% 43%; }
+    25% { border-radius: 66% 34% 25% 75% / 47% 30% 70% 53%; }
+    30% { border-radius: 32% 68% 38% 62% / 65% 60% 40% 35%; }
+    35% { border-radius: 63% 37% 41% 59% / 35% 38% 62% 65%; }
+    40% { border-radius: 57% 43% 49% 51% / 55% 71% 29% 45%; }
+    45% { border-radius: 47% 53% 34% 66% / 65% 36% 64% 35%; }
+    50% { border-radius: 44% 56% 32% 68% / 69% 26% 74% 31%; }
+    55% { border-radius: 28% 72% 37% 63% / 71% 44% 56% 29%; }    
+    60% { border-radius: 38% 62% 35% 65% / 74% 53% 47% 26%; }
+    65% { border-radius: 73% 27% 46% 54% / 54% 47% 53% 46%; }
+    70% { border-radius: 75% 25% 47% 53% / 49% 53% 47% 51%; }
+    75% { border-radius: 62% 38% 43% 57% / 55% 60% 40% 45%; }
+    80% { border-radius: 41% 59% 65% 35% / 73% 50% 50% 27%; }
+    85% { border-radius: 55% 45% 57% 43% / 73% 61% 39% 27%; }
+    90% { border-radius: 74% 26% 33% 67% / 40% 65% 35% 60%; }
+    95% { border-radius: 58% 42% 57% 43% / 53% 45% 55% 47%; }
+    100%{ border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+}
+
+@keyframes cobler {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes wobbler {
+    0%  {
+        transform: rotateZ(8deg);
+    }
+    100% {
+        transform: rotateZ(-8deg);
+    }
+}
+
+
+/*-------------------- End Thumbnails Design ---------------------*/
+
+
+/*-------------------- Play/Stop Button ------------------------*/
+
+.playButton{
+    position: absolute;
+    left: 55%;
+    color: white;
+    font-size: 10rem;
+    opacity: 0;
+    display: block;
+    text-shadow: 10px 10px 20px #000;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+}
+
+.stopButton{
+    position: absolute;
+    left: 40%;
+    color: white;
+    font-size: 10rem;
+    opacity: 0;
+    text-shadow: 10px 10px 20px #000;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.playButton:hover{
+    opacity: 1;
+    font-size: 11rem;
+    cursor: pointer;
+}
+
+.stopButton:hover{
+    opacity: 1;
+    font-size: 11rem;
+    cursor: pointer;
+}
+
+/*-------------------- End Play/Stop Button ------------------------*/

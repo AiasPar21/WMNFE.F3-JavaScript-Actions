@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>The best contact form!</h1>
+    <div id="page">
+        <form id="form">
+            <div id="full_name" class="field-design">
+                <div class="field">
+                    <label class="category" for="full-name">Full Name <span>*</span></label>
+                    <input class="form-element" id="full-name" type="text" placeholder="John Doe">
+                </div>
+                <p id="verifyName"></p>
+            </div>
+            <div id="e-mail" class="field-design">
+                <div class="field">
+                    <label class="category" for="e-mail">E-mail <span>*</span></label>
+                    <input class="form-element" id="e-mail" type="text" placeholder="yourmail@gmail.com">
+                </div>
+                <p id="verifyMail"></p>
+            </div>
+            <div id="confirm-mail" class="field-design">
+                <div class="field">
+                    <label class="category" for="confirm-mail">Confirm E-mail <span>*</span></label>
+                    <input class="form-element" id="confirm-mail" type="text" placeholder="yourmail@gmail.com">
+                </div>
+                <p id="verifyConfirm"></p>
+            </div>
+            <div id="phone" class="field-design">
+                <div class="field">
+                    <label class="category" for="phone">Phone <span>*</span></label>
+                    <input class="form-element" id="phone" type="text" placeholder="123555666">
+                </div>
+                <p id="verifyPhone"></p>
+            </div>
+            <div id="address" class="field-design">
+                <div class="field">
+                    <label class="category" for="address">Address <span>*</span></label>
+                    <input class="form-element" id="address" type="text" placeholder="address 16, Area, Postcode">
+                </div>
+                <p id="verifyAddress"></p>
+            </div>
+            <div id="message" class="field-design">
+                <div class="field">
+                    <label class="category" for="message">Message Us</label>
+                    <textarea class="form-element" id="message" placeholder="Write something to us..."></textarea>
+                </div>
+            </div>
+
+            <p id="verifyText"></p>
+            <p id="successText"></p>
+
+            <div id="register">
+               <button id="register-button" type="submit">Register</button>
+            </div>
+        </form>
+        <p id="mandatory">Everything with " <span>*</span> " is mandatory</p>
+    </div>
+</body>
+</html>
